@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de-DE">
+<link href="CSS/menu.css" rel="stylesheet" type="text/css">
+<link href="CSS/codepen.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="plugin.js"></script>
+
+<head>
+    <title>CodePen</title>
+    <meta charset="utf-8" />
+</head>
+
+<body style="margin: 0;">
+
+    <span>
+        <span class="CodepenMenu">
+            <img style="height: 55px; width: 55px; margin-bottom: 23px;" src="bilder/codepen.png" />
+            <span style="display: inline-block;">
+                <input id="search" name="search" placeholder="Untitled">
+                <p>A PEN BY CAPTAIN ANONYMOUS</p>
+            </span>
+            <span style="float: right;">
+                <button  form="inhalte"><img src="bilder/cloud.png"> Speichern</button>
+                <button id="testparams"><img src="bilder/einstellungen.png"> Testparameter</button>
+                
+                <button  id="view"><img style="height: 20px; width: 30px;" src="bilder/eye.png" /> Change
+                    View</button>
+                <button style="background-color: #47cf73 !important;
+                    border: 3px solid #47cf73 !important; color: black;">Sign Up</button>
+                <button style="margin-right: 20px;">Login</button>
+            </span>
+        </span>
+    </span>
+    
+    <form  id="xyz">
+        <textarea></textarea>
+        <textarea></textarea>
+        <textarea></textarea>
+        <iframe></iframe>
+    </form>
+</body>
+<script>
+    $("#xyz").codepen({ testValues: "true" });
+</script>
+</html>
